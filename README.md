@@ -1,1 +1,1 @@
-# programming-for-AI
+# PAI
