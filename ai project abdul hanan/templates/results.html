@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Analysis Results</title></head>
+<body>
+<h1>Results</h1>
+<p><strong>Job Description:</strong><br>{{ job_desc }}</p>
+<ul>
+{% for res in results %}
+    <li><strong>{{ res.filename }}</strong> - Match Score: {{ '%.2f'|format(res.match_score * 100) }}%</li>
+{% endfor %}
+</ul>
+<a href="/">Go Back</a>
+</body>
+</html>

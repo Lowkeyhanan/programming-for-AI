@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Resume Analyzer</title></head>
+<body>
+<h1>Upload Resumes</h1>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    Job Description:<br>
+    <textarea name="job_description" rows="5" cols="60"></textarea><br><br>
+    Select Resumes (PDF or DOCX):<br>
+    <input type="file" name="resumes" multiple><br><br>
+    <input type="submit" value="Analyze">
+</form>
+</body>
+</html>
